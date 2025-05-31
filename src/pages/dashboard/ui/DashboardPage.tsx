@@ -171,9 +171,7 @@ export default function Dashboard() {
         <div className="flex flex-col gap-8 animate-in slide-in-from-bottom duration-600 delay-500">
           {/* Income Bar Chart */}
           {(chartView === "all" || chartView === "income") && (
-            <div
-              className={`${chartView !== "all" ? "flex flex-col items-center" : ""} animate-in fade-in-up duration-600`}
-            >
+            <div className="flex flex-col items-center animate-in fade-in-up duration-600">
               <h4 className="text-slate-600 text-sm text-center mb-4 transition-all duration-300">
                 Доходы по категориям
               </h4>
@@ -238,9 +236,7 @@ export default function Dashboard() {
 
           {/* Expense Bar Chart */}
           {(chartView === "all" || chartView === "expense") && (
-            <div
-              className={`${chartView !== "all" ? "flex flex-col items-center" : ""} animate-in fade-in-up duration-600`}
-            >
+            <div className="flex flex-col items-center animate-in fade-in-up duration-600">
               <h4 className="text-slate-600 text-sm text-center mb-4 transition-all duration-300">
                 Расходы по категориям
               </h4>
