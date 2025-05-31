@@ -94,11 +94,6 @@ export default function Login() {
             </Link>
           </p>
 
-          <div className="mt-6 p-4 bg-slate-50 rounded-md border-l-4 border-l-blue-600">
-            <p className="font-semibold text-slate-900 text-sm mb-1">Демо-доступ:</p>
-            <p className="text-slate-700 text-sm mb-1">Email: demo@example.com</p>
-            <p className="text-slate-700 text-sm">Пароль: password123</p>
-          </div>
         </div>
       </div>
     </>

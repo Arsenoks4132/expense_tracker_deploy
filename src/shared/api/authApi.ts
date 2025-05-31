@@ -131,7 +131,7 @@ export const authApi = {
   // Verify token (for future use)
   verifyToken: async (token: string): Promise<{ success: boolean; user?: User; error?: string }> => {
     await simulateApiDelay(100, 300)
-
+    console.log(token);
     // For demo purposes, always return success
     // In real app, this would validate JWT token
     return { success: true }
@@ -143,6 +143,6 @@ export const authApi = {
 
     // For demo purposes, always return success
     // In real app, this would refresh JWT token
-    return { success: true, accessToken: "new-access-token" }
+    return { success: true, accessToken: refreshToken }
   },
 }
